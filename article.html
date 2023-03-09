@@ -31,7 +31,7 @@
     </nav>
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -39,27 +39,20 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-            <form class="row g-3">
-                <div class="col-auto">
-                  <label for="staticEmail2" class="visually-hidden">Email</label>
-                  <input type="text" class="form-control bs-dark-bg-subtle" id="staticEmail2" placeholder="email@example.com">
+            <form class="row g-3 was-validation" action="">
+              <input type="text" class="form-control " id="staticEmail2" placeholder="email@example.com" required>
+              <div class="invalid-feedback">Please fill out user name</div>
+              <div class="valid-feedback">Looks Good!</div>
+              <input type="password" class="form-control " id="inputPassword2" placeholder="Password" required>
+              <div class="modal-footer justify-content-between">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-secondary">Login</button>
                 </div>
-                <div class="col-auto">
-                  <label for="inputPassword2" class="visually-hidden">Password</label>
-                  <input type="password" class="form-control bs-dark-bg-subtle" id="inputPassword2" placeholder="Password">
-                </div>
-                <div class="col-auto">
-                  <button type="submit" class="btn btn-secondary mb-3 bs-dark-bg-subtle">Confirm identity</button>
-                </div>
-              </form>        </div>
-        <div class="modal-footer justify-content-between">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-secondary">Login</button>
-
+            </form>        
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
     
 
