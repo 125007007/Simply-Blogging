@@ -4,7 +4,6 @@ class BlogData{
         this.lname = lname;
         this.title = title;
         this.content = content;
-        this.invalidCheck2 = invalidCheck2;
     }
 }
 
